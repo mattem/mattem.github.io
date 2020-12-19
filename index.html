@@ -1,18 +1,45 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en" class="text-gray-900 leading-tight">
+ <head>
+  <meta charset="utf-8">
+  <title>Matthew Mackay</title>
+  <base href="/">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 
-      <div class="entry">
-        {{ post.excerpt }}
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-lg w-full bg-gray-200 rounded-md">
+      <img class="mt-5 mx-auto h-60 w-60 rounded-full" src="assets/images/matt.jpg">
+      <h2 class="mt-6 text-center text-3xl font-extrabold">Matthew Mackay</h2>
+      <h6 class="mt-1 text-center font-bold m-0 text-gray-700">SENIOR ENGINEER</h6>
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+        <p class="leading-4 font-medium text-center">
+          Developer experience and Bazel build engineer
+        </p>
+        <p class="text-center">
+          Core maintainer of the <a class="text-green-700" href="https://github.com/bazelbuild/rules_nodejs" rel="noreferrer">Node.js Bazel rules</a>, previously a Technical Lead for Evertz Microsystems,
+          leading the Build Operations team, responsible for maintaining a large monorepo, scaling CI / CD processes,
+          and improving developer experience
+        </p>
+        <p class="text-center">
+          Experienced in building frontend applications using Angular and Typescript
+        </p>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <div class="mb-6 text-center">
+        <a href="https://github.com/mattem" rel="noreferrer">
+          <i class="pr-2 text-2xl devicon-github-original colored"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/matthew-mackay-a1b85542" rel="noreferrer">
+          <i class="text-2xl devicon-linkedin-plain"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>
